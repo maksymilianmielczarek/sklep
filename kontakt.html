@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">strona główna</a>
+</body>
+</html>
+
+
+<option value="" disabled selected>wybierz kategorie</option>
+ 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz kontaktowy</title>
+</head>
+<body>
+
+    <h1>Formularz kontaktowy</h1>
+
+    <form action="#" method="post">
+
+        <!-- Temat wiadomości -->
+        <label for="temat">Temat wiadomości:</label>
+        <select id="temat" name="temat">
+            <option value="" selected>Wybierz temat wiadomości</option>
+            <option value="reklamacja">Reklamacja</option>
+            <option value="zapytanie">Zapytanie</option>
+            <option value="wspolpraca">Współpraca</option>
+            <option value="oferta">Oferta</option>
+            <option value="inne">Inne</option>
+        </select>
+
+        <br><br>
+
+        <!-- Preferowana forma kontaktu -->
+        <p>Preferowana forma kontaktu:</p>
+
+        <input type="radio" id="telefon" name="forma_kontaktu" value="telefon">
+        <label for="telefon">Telefon</label>
+
+        <input type="radio" id="email" name="forma_kontaktu" value="email">
+        <label for="email">E-mail</label>
+
+        <input type="radio" id="messenger" name="forma_kontaktu" value="messenger">
+        <label for="messenger">Messenger</label>
+
+        <br><br>
+
+        <!-- Zgoda na przetwarzanie danych -->
+        <input type="checkbox" id="zgoda" name="zgoda" value="tak">
+        <label for="zgoda">
+            Zgadzam się na przetwarzanie moich danych osobowych.
+        </label>
+
+        <br><br>
+
+        <button type="submit" name="wyslij" value="wyslij">Wyślij</button>
+
+    </form>
+
+</body>
+</html>

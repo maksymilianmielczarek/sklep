@@ -15,10 +15,13 @@
     <!--pole typu numer telefonu-->
     <input type="tel" name="telefon" placeholder="+48 555-555-555" pattern="[+][0-9]{2} [0-9]{3}-[0-9]{3}-[0-9]">
       <!--pole numeryczne-->
-     <input type="number" name="wiek" min="18" max="100">
+      <label> for=""</label>
+     <input type="number" name="wiek" placeholder="wiek" min="18" max="100">
      <!--pole na hasło -->
+     <label> for="haslo">Hasło:</label>
      <input type="password" name="hasło" placeholder="japko123!">
      <!--przycisk-->
+     <label>for="email">Email</label>
      <input type="email" name="mail" placeholder="japuszko@.cośtam">
      
      
@@ -27,7 +30,9 @@
       <input type="radio" name="plec" value="mezczyzna" checked> mężczyzna
       <input  type="radio" name="plec value=kobieta"> kobieta
      <!-- checkbox-->
+      <label>
       <input type="checkbox" name="ZgodaReklamowa" value="tak"> wyrażam Zgode na reklame
+      </label>
       <input type="checkbox" name="zgodaregaulamin" value="tak" required> akceptuje regulamin
       <input type="submit" value="Wyślij">
       <button type="submit">Wyślij</button>
@@ -42,6 +47,12 @@
             <option value="elektronika"></option>  
       </optgroup>
         </select>
+
+     <!--pole na hasło-->
+     <label
+
+
+
 
      <!--pole data / czas-->
      <input type="date" name="termin">

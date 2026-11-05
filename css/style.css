@@ -1,0 +1,30 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f1f1f1;
+}
+
+a:link,
+a:visited {
+	color: #555555;
+}
+
+a:hover {
+	color: #171b1b;
+}
+
+a:focus-visible {
+	outline: 2px solid #78a832;
+	outline-offset: 2px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+p{
+	color: red;
+}

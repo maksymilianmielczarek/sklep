@@ -3,143 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formularz zamówienia | Sklep z japuszkami</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-     
-     
-     
-   
-    <!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz</title>
-</head>
-<body>
-    <form action="skrypt.php" method="post">
-        <fieldset>
-            <legend>Dane osobowe</legend>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <h1>Formularz zamówienia</h1>
+            <nav class="site-nav" aria-label="Nawigacja główna">
+                <a href="img/index.html">Sklep</a>
+                <a href="formularz.html" aria-current="page">Zamówienie</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
 
-            <div>
-                <label for="imie">Imię:</label>
-                <input type="text" id="imie" name="imie" placeholder="Imię" required>
-            </div>
+    <main class="site-main page-main">
+        <form action="skrypt.php" method="post">
+            <fieldset>
+                <legend>Dane osobowe</legend>
+                <div class="form-field">
+                    <label for="imie">Imię:</label>
+                    <input type="text" id="imie" name="imie" autocomplete="given-name" placeholder="Imię" required>
+                </div>
+                <div class="form-field">
+                    <label for="telefon">Telefon:</label>
+                    <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="+48 555-555-555" pattern="\+?[0-9]{2} [0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="japuszko@wp.pl" required>
+                </div>
+                <div class="form-field">
+                    <label for="wiek">Wiek:</label>
+                    <input type="number" id="wiek" name="wiek" min="18" max="100" placeholder="Wiek" required>
+                </div>
+                <div class="form-field">
+                    <label for="haslo">Hasło:</label>
+                    <input type="password" id="haslo" name="haslo" autocomplete="new-password" placeholder="Hasło" required>
+                </div>
+            </fieldset>
 
-            <div>
-                <label for="telefon">Telefon:</label>
-                <input
-                    type="tel"
-                    id="telefon"
-                    name="telefon"
-                    placeholder="+48 555-555-555"
-                    pattern="[+][0-9]{2} [0-9]{3}-[0-9]{3}-[0-9]"
-                    required
-                >
-            </div>
+            <fieldset>
+                <legend>Płeć</legend>
+                <div class="form-options">
+                    <label class="form-option"><input type="radio" name="plec" value="mezczyzna" checked> Mężczyzna</label>
+                    <label class="form-option"><input type="radio" name="plec" value="kobieta"> Kobieta</label>
+                    <label class="form-option"><input type="radio" name="plec" value="inna"> Inna</label>
+                </div>
+            </fieldset>
 
-            <div>
-                <label for="email">E-mail:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="japuszko@wp.pl"
-                    required
-                >
-            </div>
+            <fieldset>
+                <legend>Informacje o zamówieniu</legend>
+                <div class="form-field">
+                    <label for="kategoria">Kategoria:</label>
+                    <select id="kategoria" name="kategoria" required>
+                        <option value="" disabled selected>Wybierz kategorię</option>
+                        <optgroup label="Produkty">
+                            <option value="japuszka">Japuszki</option>
+                            <option value="odziez">Odzież</option>
+                            <option value="ksiazki">Książki</option>
+                            <option value="elektronika">Elektronika</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="termin">Preferowany termin dostawy:</label>
+                    <input type="date" id="termin" name="termin">
+                </div>
+                <div class="form-field">
+                    <label for="wiadomosc">Wiadomość:</label>
+                    <textarea id="wiadomosc" name="wiadomosc" rows="6" placeholder="Napisz szczegóły zamówienia"></textarea>
+                </div>
+                <label class="form-option"><input type="checkbox" name="zgoda_reklama" value="tak"> Wyrażam zgodę na reklamę</label>
+                <label class="form-option"><input type="checkbox" name="regulamin" value="tak" required> Akceptuję regulamin</label>
+            </fieldset>
 
-            <div>
-                <label for="wiek">Wiek:</label>
-                <input type="number" id="wiek" name="wiek" min="18" max="100" placeholder="wiek" required>
-            </div>
+            <button class="form-submit" type="submit">Wyślij</button>
+        </form>
+    </main>
 
-            <div>
-                <label for="haslo">Hasło:</label>
-                <input type="password" id="haslo" name="haslo" placeholder="hasło" required>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Płeć</legend>
-
-            <label>
-                <input type="radio" name="plec" value="mezczyzna" checked>
-                Mężczyzna
-            </label>
-
-            <label>
-                <input type="radio" name="plec" value="kobieta">
-                Kobieta
-            </label>
-
-            <label>
-                <input type="radio" name="plec" value="inna">
-                Inna
-            </label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Informacje o zamówieniu</legend>
-
-            <div>
-                <label for="kategoria">Kategoria:</label>
-                <select id="kategoria" name="kategoria" required>
-                    <option value="" disabled selected>Wybierz kategorię</option>
-                    <optgroup label="Produkty">
-                        <option value="japuszki">Japuszki</option>
-                        <option value="odziez">Odzież</option>
-                        <option value="ksiazki">Książki</option>
-                        <option value="elektronika">Elektronika</option>
-                    </optgroup>
-                </select>
-            </div>
-
-            <div>
-                <label for="termin">Preferowany termin dostawy:</label>
-                <input type="date" id="termin" name="termin">
-            </div>
-
-            <div>
-                <label for="wiadomosc">Wiadomość:</label>
-                <textarea
-                    id="wiadomosc"
-                    name="wiadomosc"
-                    rows="6"
-                    cols="40"
-                    placeholder="Napisz szczegóły zamówienia"
-                ></textarea>
-            </div>
-
-            <label>
-                <input type="checkbox" name="zgoda_reklama" value="tak">
-                Wyrażam zgodę na reklamę
-            </label>
-
-            <label>
-                <input type="checkbox" name="regulamin" value="tak" required>
-                Akceptuję regulamin
-            </label>
-        </fieldset>
-
-        <button type="submit">Wyślij</button>
-    </form>
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p><a href="img/index.html">Powrót do sklepu</a></p>
+        </div>
+    </footer>
 </body>
 </html>
 
 
-
-
-     <!--pole data / czas-->
-     <input type="date" name="termin">
-     <!--alternattywny przycisk sumbit-->
-     <button type="submit"></button>
-
-    </form>
-    </body>
-</html>
 
 
 

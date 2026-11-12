@@ -1,19 +1,19 @@
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f1f1f1;
+	background-color: #001DED;
 }
 
 a:link,
 a:visited {
-	color: #555555;
+	color: #ED30BD;
 }
 
 a:hover {
-	color: #171b1b;
+	color: #ED30BD;
 }
 
 a:focus-visible {
-	outline: 2px solid #78a832;
+	outline: 2px solid var(--kolor-obramowanie);
 	outline-offset: 2px;
 }
 
@@ -26,5 +26,24 @@ main {
 }
 
 p{
-	color: red;
+	color: #78EDBB;
+}
+:root {
+	--kolor-glowny: #006E2F;
+	--kolor-akcent: #ED30BD;
+	--kolor-tekst: #001DED;
+	--kolor-tlo: #78EDBB;
+	--kolor-obramowanie: #53006E;
+
+	--odstep-maly: 8px;
+	--odstep-sredni: 16px;
+	--odstep-duzy: 32px;
+}
+/* główny selektor dla wszystkich elementów */
+* {
+	box-sizing: border-box; /* uwzględnia padding w wymiarach elementu */
+}
+/* selektor po typie elementu - wagi 1*/
+h1 {
+	color: var(--kolor-glowny);
 }

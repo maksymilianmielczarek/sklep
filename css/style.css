@@ -230,22 +230,6 @@ textarea:focus-visible {
 	color: var(--kolor-tla);
 }
 
-@media (max-width: 40rem) {
-	.site-header__inner {
-		align-items: flex-start;
-		flex-direction: column;
-		gap: var(--odstep-sredni);
-	}
-
-	.site-main {
-		padding: var(--odstep-sredni);
-	}
-
-	h1 {
-		font-size: 2rem;
-	}
-}
-
 form {
 	display: grid;
 	gap: var(--odstep-sredni);

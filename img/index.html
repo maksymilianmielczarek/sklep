@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-    <meta charset=UTF-8>
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpeg" href="ikony/channels4_profile%20(1).jpg"> 
+    <meta name="description" content="Poznaj czerwone, złote i świecące japuszka z lokalnej hodowli.">
     <title>Sklep z japuszkami</title>
-        <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
-    <header>
-        <h1>Sklep z japuszkami</h1>
-        <p>Mamy do wyboru do koloru: czerwone, złote, a nawet świecące japuszka. Japuszka są zdrowe, mordko!</p>
-        <nav aria-label="Nawigacja główna">
-            <a href="#produkty">Produkty</a>
-            <a href="../formularz.html">Formularz zamówienia</a>
-            <a href="../kontakt.html">Kontakt</a>
-        </nav>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <div>
+                <h1>Sklep z japuszkami</h1>
+                <p class="site-header__intro">Czerwone, złote i świecące japuszka od lokalnych hodowców.</p>
+            </div>
+            <nav class="site-nav" aria-label="Nawigacja główna">
+                <a href="#produkty">Produkty</a>
+                <a href="../formularz.html">Formularz zamówienia</a>
+                <a href="../kontakt.html">Kontakt</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="site-main">
         <section id="produkty" aria-labelledby="naglowek-produktow">
-            <h2 id="naglowek-produktow">Nasze produkty</h2>
+            <h2 class="section-title" id="naglowek-produktow">Nasze produkty</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <h3 class="product-card__title--classic">Czerwone japuszko</h3>
+                    <p>Zwyczajne, zdrowe japuszko, które daje zdrowie na cały tydzień.</p>
+                    <figure>
+                        <img src="produkty/Apple2.webp" alt="Czerwone pikselowe japuszko" width="200" height="200">
+                        <figcaption>Klasyczne czerwone japuszko</figcaption>
+                    </figure>
+                </article>
 
-            <article>
-                <h3 style="color: red;">Czerwone japuszko</h3>
-                <p> Zwyczajne, zdrowe japuszko, które daje zdrowie na cały tydzień. </p>
-                <figure>
-                    <img src="produkty/Apple2.webp" alt="Czerwone pikselowe japuszko" width="200" height="200">
-                    <figcaption> Klasyczne czerwone japuszko</figcaption>
-                </figure>
-            </article>
+                <article class="product-card">
+                    <h3 class="product-card__title--premium">Złote japuszko</h3>
+                    <p>Japuszko pokryte złotem. Po zjedzeniu dostajesz dodatkowe dwa życia i zdrowie na dwa i pół tygodnia.</p>
+                    <figure>
+                        <img src="produkty/Złote_jabłko_JE2_BE2.png" alt="Złote pikselowe japuszko" width="200" height="200">
+                        <figcaption>Złote japuszko na wyjątkowe okazje</figcaption>
+                    </figure>
+                </article>
 
-            <article>
-                <h3 style="color: gold;">Złote japuszko</h3>
-                <p>Japuszko pokryte złotem. Po zjedzeniu dostajesz dodatkowe dwa życia i zdrowie na dwa i pół tygodnia.</p>
-                <figure>
-                    <img src="produkty/Złote_jabłko_JE2_BE2.png" alt="Złote pikselowe japuszko" width="200" height="200">
-                    <figcaption>Złote japuszko na wyjątkowe okazje</figcaption>
-                </figure>
-            </article>
-
-            <article>
-                <h3 style="color: rgb(54, 27, 129);"> Świecące japuszko</h3>
-                <p>Może i najdroższa opcja, ale jaka zajefajna! Po zjedzeniu nie chorujesz przez miesiąc i zyskujesz +1000 aury.</p>
-                <figure>
-                    <img src="produkty/images%20(5).jpg" alt="Różowo-złote, świecące japuszko" width="200" height="200">
-                    <figcaption>Świecące japuszko</figcaption>
-                </figure>
-            </article>
+                <article class="product-card">
+                    <h3 class="product-card__title--glowing">Świecące japuszko</h3>
+                    <p>Może i najdroższa opcja, ale jaka zajefajna! Po zjedzeniu nie chorujesz przez miesiąc i zyskujesz +1000 aury.</p>
+                    <figure>
+                        <img src="produkty/images%20(5).jpg" alt="Różowo-złote, świecące japuszko" width="200" height="200">
+                        <figcaption>Świecące japuszko</figcaption>
+                    </figure>
+                </article>
+            </div>
         </section>
 
-        <section aria-labelledby="naglowek-dostawy">
-            <h2 id="naglowek-dostawy">Dostawa</h2>
+        <section class="info-section" aria-labelledby="naglowek-dostawy">
+            <h2 class="section-title" id="naglowek-dostawy">Dostawa</h2>
             <p>Dostawa jest darmowa przy zakupie złotego lub świecącego japuszka. Przy zakupie samych czerwonych japuszek wysyłka jest płatna. Każdą przesyłkę chronimy przed sówokotkiem.</p>
             <p><strong>Japuszka wysyłamy od poniedziałku do piątku.</strong></p>
             <address>Adres sklepu: Japuszkowa 5, Podlasie</address>
         </section>
 
-        <section aria-labelledby="naglowek-zalety">
-            <h2 id="naglowek-zalety">Dlaczego warto?</h2>
+        <section class="info-section" aria-labelledby="naglowek-zalety">
+            <h2 class="section-title" id="naglowek-zalety">Dlaczego warto?</h2>
             <ul>
                 <li>Japuszka mamy zawsze świeże.</li>
                 <li>Pochodzą od lokalnych hodowców japuszek.</li>
@@ -67,17 +71,17 @@
             </ul>
         </section>
 
-        <section aria-labelledby="naglowek-zamowienia">
-            <h2 id="naglowek-zamowienia">Jak zamówić?</h2>
+        <section class="info-section" aria-labelledby="naglowek-zamowienia">
+            <h2 class="section-title" id="naglowek-zamowienia">Jak zamówić?</h2>
             <ol>
-                <li>Dodaj produkt do koszyka.</li>
+                <li>Wybierz japuszko.</li>
                 <li><a href="../formularz.html">Wypełnij formularz zamówienia.</a></li>
                 <li>Potwierdź zamówienie i zapłać.</li>
             </ol>
         </section>
 
-        <section aria-labelledby="naglowek-polecanych">
-            <h2 id="naglowek-polecanych">Nasze polecane</h2>
+        <section class="info-section" aria-labelledby="naglowek-polecanych">
+            <h2 class="section-title" id="naglowek-polecanych">Nasze polecane</h2>
             <ul>
                 <li>Japuszko fioletowe</li>
                 <li>Japuszko zielone</li>
@@ -87,8 +91,10 @@
         </section>
     </main>
 
-    <footer>
-        <p><a href="japuszka.html">Więcej o japuszkach</a></p>
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p><a href="japuszka.html">Więcej o japuszkach</a></p>
+        </div>
     </footer>
 </body>
 </html>

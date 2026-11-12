@@ -245,3 +245,93 @@ textarea:focus-visible {
 		font-size: 2rem;
 	}
 }
+
+form {
+	display: grid;
+	gap: var(--odstep-sredni);
+}
+
+fieldset {
+	min-width: 0;
+	margin: 0;
+	padding: var(--odstep-sredni);
+	display: grid;
+	gap: var(--odstep-sredni);
+	border: 0.0625rem solid var(--kolor-obramowania);
+	border-radius: 0.375rem;
+	background-color: var(--kolor-powierzchni);
+}
+
+legend {
+	padding: 0 var(--odstep-maly);
+	color: var(--kolor-glowny);
+	font-weight: 700;
+}
+
+.form-field {
+	min-width: 0;
+	display: grid;
+	gap: var(--odstep-maly);
+}
+
+.form-field label {
+	font-weight: 600;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	min-width: 0;
+	min-height: 2.75rem;
+	padding: var(--odstep-maly) var(--odstep-sredni);
+	border: 0.0625rem solid var(--kolor-obramowania);
+	border-radius: 0.25rem;
+	background-color: var(--kolor-powierzchni);
+	color: var(--kolor-tekstu);
+	font: inherit;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.form-options {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--odstep-sredni);
+}
+
+.form-option {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--odstep-maly);
+	font-weight: 400;
+}
+
+.form-option input {
+	width: 1.125rem;
+	min-height: 1.125rem;
+	margin-top: 0.25rem;
+	padding: 0;
+	flex: 0 0 auto;
+	accent-color: var(--kolor-glowny);
+}
+
+.form-submit {
+	justify-self: start;
+	min-height: 2.75rem;
+	padding: var(--odstep-maly) var(--odstep-duzy);
+	border: 0.0625rem solid var(--kolor-akcentu);
+	border-radius: 0.25rem;
+	background-color: var(--kolor-akcentu);
+	color: var(--kolor-powierzchni);
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.form-submit:hover {
+	border-color: var(--kolor-akcentu-hover);
+	background-color: var(--kolor-akcentu-hover);
+}

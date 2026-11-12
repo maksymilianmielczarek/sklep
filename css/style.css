@@ -1,49 +1,75 @@
-body {
-	font-family: Arial, sans-serif;
-	background-color: #001DED;
+* {
+	box-sizing: border-box;
 }
 
-a:link,
-a:visited {
-	color: #ED30BD;
+:root {
+	--kolor-tla: #F3F7F1;
+	--kolor-powierzchni: #FFFFFF;
+	--kolor-tekstu: #183629;
+	--kolor-tekstu-drugorzednego: #3F5B4C;
+	--kolor-glowny: #225C3E;
+	--kolor-akcentu: #A1273A;
+	--kolor-akcentu-hover: #7D1E2F;
+	--kolor-zloty: #704A00;
+	--kolor-owocowy: #613A78;
+	--kolor-obramowania: #BCCBC0;
+	--kolor-cienia: #18362924;
+
+	--odstep-maly: 0.5rem;
+	--odstep-sredni: 1rem;
+	--odstep-duzy: 2rem;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background-color: var(--kolor-tla);
+	color: var(--kolor-tekstu);
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.2;
+}
+
+h1 {
+	color: var(--kolor-glowny);
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+p {
+	max-width: 65ch;
+}
+
+a {
+	color: var(--kolor-akcentu);
+	text-underline-offset: 0.2em;
 }
 
 a:hover {
-	color: #ED30BD;
+	color: var(--kolor-akcentu-hover);
 }
 
-a:focus-visible {
-	outline: 2px solid var(--kolor-obramowanie);
-	outline-offset: 2px;
-}
-
-main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-}
-
-p{
-	color: #78EDBB;
-}
-:root {
-	--kolor-glowny: #006E2F;
-	--kolor-akcent: #ED30BD;
-	--kolor-tekst: #001DED;
-	--kolor-tlo: #78EDBB;
-	--kolor-obramowanie: #53006E;
-
-	--odstep-maly: 8px;
-	--odstep-sredni: 16px;
-	--odstep-duzy: 32px;
-}
-/* główny selektor dla wszystkich elementów */
-* {
-	box-sizing: border-box; /* uwzględnia padding w wymiarach elementu */
-}
-/* selektor po typie elementu - wagi 1*/
-h1 {
-	color: var(--kolor-glowny);
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+	outline: 0.1875rem solid var(--kolor-akcentu);
+	outline-offset: 0.125rem;
 }

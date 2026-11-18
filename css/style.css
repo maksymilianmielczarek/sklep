@@ -315,7 +315,19 @@ textarea {
 	cursor: pointer;
 }
 
-.form-submit:hover {
-	border-color: var(--kolor-akcentu-hover);
-	background-color: var(--kolor-akcentu-hover);
+
+.menu-toggle {
+	list-style: none; /* pozbęde się kropek przy elementach listy */
+	
+
 }
+	.card {
+	display: flex;
+	}
+	
+	selection> {
+
+
+
+	}
+	
